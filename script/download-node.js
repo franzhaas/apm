@@ -10,7 +10,7 @@ var path = require('path');
 // `npm install` is being run at the root of the repository.
 var request = null;
 try {
-  request = require('../lib/request');
+  request = require('request');
 } catch (error) {
   require('coffee-script').register();
   request = require('../src/request');
